@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block head_content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+{% endblock %}
+
+{% block main_content %}
+
+<div class="home">
+    {% for movie in movie_list %}
+    <div class="home__item">        
+    {% if movie.videoLink %}
+            <iframe
+                class="home__video" 
+                src="{{ movie.videoLink }}" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        {% endif %}
+        <div class="home__tag-list">
+        {% for tag in movie.tags%}
+            <p class="home__tag">{{ tag }}</p>
+        {% endfor %}
+         </div>
+        <p class="home__title">{{ movie["title"] }}</p>
+    </div>
+    {%endfor%}
+</div>
+
+{% endblock %}

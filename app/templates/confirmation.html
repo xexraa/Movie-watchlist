@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head_content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}" />
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+{% block main_content %}
+<form name="delete" method="post" enctype="multipart/form-data" novalidate class="form">
+    <div class="form__container">
+        {{ form.hidden_tag() }}
+        {{ form.title(class_="hidden") }}
+        {{ form.director(class_="hidden") }}
+        {{ form.year(class_="hidden") }}
+        <h2>Are you sure you want to delete this movie? This is an irreversible process!</h2>
+
+        <div>{{ form.delete(class_="button button--form-delete") }}</div>
+    </div>
+</form>
+{% endblock %}
