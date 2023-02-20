@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
+from typing import List
 
 
 @dataclass
@@ -9,11 +10,11 @@ class Movie:
     director: str
     year: int
     
-    cast: list[str] = field(default_factory=list)
-    series: list[str] = field(default_factory=list)
+    cast: List[str] = field(default_factory=list)
+    series: List[str] = field(default_factory=list)
     lastWatched: datetime = None
     rating: int = 0
-    tags: list[str] = field(default_factory=list)
+    tags: List[str] = field(default_factory=list)
     description: str = None
     videoLink: str = None
     
@@ -23,4 +24,4 @@ class User:
     _id: str
     email: str
     password: str
-    movies: list[str] = field(default_factory=list)
+    movies: List[str] = field(default_factory=list)
