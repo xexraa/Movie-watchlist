@@ -4,6 +4,14 @@
 
 This is a site for creating a watchlist of videos added by users
 
+## In short
+
+- the main page is open to the public and has a list of all videos that have been added by users
+- after logging in, everyone has access to their private movie list
+- deletion and editing is done only by logged in users and only in your own movie list
+- there is an option to track when I last watched this video by clicking on the link and rate it by adding stars
+- and there is a publicly available option that does not require logging in to set a light or dark mode
+
 ## Where to start?
 The application has a home page, a login and registration section, a light and dark mode, after logging in a list of videos that the user has added.
 1. Home page with dark and light mode
@@ -35,13 +43,6 @@ The application has a home page, a login and registration section, a light and d
      ![user1](https://user-images.githubusercontent.com/121942715/220163594-d5d87845-54b2-43c7-b400-567828b9e928.png)
      ![user2](https://user-images.githubusercontent.com/121942715/220163621-e9642541-e76e-4dd2-8246-3692b357b125.png)
 
-## In short
-
-- the main page is open to the public and has a list of all videos that have been added by users
-- after logging in, everyone has access to their private movie list
-- deletion and editing is done only by logged in users and only in your own movie list
-- there is an option to track when I last watched this video by clicking on the link and rate it by adding stars
-- and there is a publicly available option that does not require logging in to set a light or dark mode
 
 ## What sources did I use?
 
